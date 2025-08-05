@@ -62,14 +62,14 @@ A loading indicator component that provides uses the new Material 3 Expressive l
 
 #### Properties
 
-| Prop               | Type                           | Platform | Default     | Description                                               |
-| ------------------ | ------------------------------ | -------- | ----------- | --------------------------------------------------------- |
-| `size`             | `number \| 'small' \| 'large'` | Both     | `38`        | Size of the loading indicator                             |
-| `color`            | `ColorValue`                   | Both     | `"#999999"` | Color of the loading indicator                            |
-| `containerSize`    | `number`                       | Android  | auto        | Size of the background circle (Android only)              |
-| `containerColor`   | `ColorValue`                   | Android  | `undefined` | Background color of the circle surrounding the indicator  |
-| `animating`        | `boolean`                      | Both     | `true`      | Whether the loader should be shown                        |
-| `hidesWhenStopped` | `boolean`                      | iOS      | `true`      | Whether the indicator is hidden when `animating` is false |
+| Prop               | Type                           | Platform  | Default     | Description                                               |
+| ------------------ | ------------------------------ | --------- | ----------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| `size`             | `number \| 'small' \| 'large'` | Both      | `38`        | Size of the loading indicator                             |
+| `color`            | `ColorValue`                   | Both      | `"#999999"` | Color of the loading indicator                            |
+| `containerSize`    | `number`                       | Android   | auto        | Size of the background circle (Android only)              |
+| `containerColor`   | `ColorValue`                   | undefined | Android     | `undefined`                                               | Background color of the circle surrounding the indicator. Set to undefined for no container |
+| `animating`        | `boolean`                      | Both      | `true`      | Whether the loader should be shown                        |
+| `hidesWhenStopped` | `boolean`                      | iOS       | `true`      | Whether the indicator is hidden when `animating` is false |
 
 #### Size Options
 
