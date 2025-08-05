@@ -2,7 +2,7 @@
 
 # @rn-nui/loading-indicator
 
-Native loading indicators for React Native with enhanced functionality and cross-platform support.
+Native loading indicators for React Native with enhanced functionality and cross-platform support. Read more about the [Material 3 Expressive loading indicator](https://m3.material.io/components/loading-indicator/overview).
 
 ## Installation
 
