@@ -1,4 +1,4 @@
-<img height="1500px" alt="cover" src="./screenshots/cover.gif" />
+<img alt="cover" src="./screenshots/cover.gif" />
 
 # @rn-nui/loading-indicator
 
