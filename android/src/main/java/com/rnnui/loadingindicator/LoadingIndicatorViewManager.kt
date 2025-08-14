@@ -2,6 +2,7 @@ package com.rnnui.loadingindicator
 
 import android.graphics.Color
 import com.facebook.react.module.annotations.ReactModule
+import com.facebook.react.uimanager.PixelUtil.dpToPx
 import com.facebook.react.uimanager.SimpleViewManager
 import com.facebook.react.uimanager.ThemedReactContext
 import com.facebook.react.uimanager.ViewManagerDelegate
@@ -44,12 +45,12 @@ class LoadingIndicatorViewManager : SimpleViewManager<LoadingIndicator>(),
 
   override fun setSize(view: LoadingIndicator?, value: Int) {
     if (view == null) return
-    view.indicatorSize = value
+    view.indicatorSize = value.dpToPx().toInt()
   }
 
   override fun setContainerSize(view: LoadingIndicator?, value: Int) {
     if (view == null) return
-    view.containerHeight = value
-    view.containerWidth = value
+    view.containerHeight = value.dpToPx().toInt()
+    view.containerWidth = value.dpToPx().toInt()
   }
 }

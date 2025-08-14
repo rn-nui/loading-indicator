@@ -46,8 +46,8 @@ export default function LoadingIndicator({
     <NativeLoadingIndicatorView
       containerColor={containerColor}
       color={color}
-      size={Math.round(resolveIndicatorSize() * 2)}
-      containerSize={Math.round(resolvedContainerSize * 2)}
+      size={Math.round(resolveIndicatorSize())}
+      containerSize={Math.round(resolvedContainerSize)}
       style={sizeStyle}
       {...props}
     />
