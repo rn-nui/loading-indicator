@@ -4,10 +4,12 @@
   "description": "Native loading indicators for React Native",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
+  "react-native": "./src/index.tsx",
   "exports": {
     ".": {
       "source": "./src/index.tsx",
       "types": "./lib/typescript/src/index.d.ts",
+      "react-native": "./src/index.tsx",
       "default": "./lib/module/index.js"
     },
     "./package.json": "./package.json"
