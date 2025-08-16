@@ -12,6 +12,7 @@ export default function LoadingIndicator({
   color,
   size = 38,
   animating = true,
+  style,
   ...props
 }: LoadingIndicatorProps) {
   function resolveContainerSize() {
@@ -38,18 +39,20 @@ export default function LoadingIndicator({
     [resolvedContainerSize]
   );
 
+  const styles = useMemo(() => [style, sizeStyle], [sizeStyle, style]);
+
   if (!animating) {
     return <View style={sizeStyle} />;
   }
 
   return (
     <NativeLoadingIndicatorView
+      {...props}
       containerColor={containerColor}
       color={color}
       size={Math.round(resolveIndicatorSize())}
       containerSize={Math.round(resolvedContainerSize)}
-      style={sizeStyle}
-      {...props}
+      style={styles}
     />
   );
 }
