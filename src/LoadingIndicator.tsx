@@ -9,7 +9,7 @@ import { useMemo } from 'react';
 export default function LoadingIndicator({
   containerSize,
   containerColor,
-  color = GRAY,
+  color,
   size = 38,
   animating = true,
   ...props
@@ -74,4 +74,3 @@ const SMALL_SIZE = 20;
 const CONTAINER_SIZE_RATIO = 1.263;
 
 export type IndicatorSize = 'small' | 'large' | number | undefined;
-const GRAY = '#999999';
